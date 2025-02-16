@@ -1,0 +1,93 @@
+ctrl +d: trỏ vào các chữ giống nhau
+alt + w : thẻ p
+so sanh code :https://www.diffchecker.com/text-compare/
+gõ lorem để sinh ra sô từ
+ctrl +d : để con trỏ sử lí khi cac từ giống nhau trên nhiều dongff
+br or br/ : de xuong dong (aaaaaa <br/>)
+hr : sinh ra ke ngang <hr>
+b or strong: in dam 
+i or em: in nghieng
+b và i ko mang ngũ nghĩa còn strong và em mang ngũ nghĩa
+u : gach chan
+ul : danh sach ko co thứ tự - list-style : none  sẽ bỏ hết dấu chấm
+ol : danh sach co thư thứ tụ
+li : thẻ con trực tiếp của ul , ol
+phím tắt:  https://docs.emmet.io/cheat-sheet/
+(ul oror ol)>li*5{item $}: sẽ ra item tu 1 tơi 5
+ol reversed : đảo ngươc lại thứ tự 
+ol type ="": danh dau dau dong la 1 kí tự 
+<a href="link muốn đến" target="_blank"> Đi đến trang B </a>
+chú ý: _blank se nhảy sangtab mới còn _self sẽ dùng luôn tap đấy
+<a href = "tel:số điện thoại ">goi cho anh nhe</a> -->goi dien
+<a href = "mailto:gamil">email</a> ->>> email
+<img src ="link hình ảnh cần hiển thi" alt = "Hinh anh " width = "cao" height="rong">
+alt : hiển thị text , hỗ trợ đọc màn hình , công cụ tìm kiếm
+bỏ 1 chiều đi thì chiều còn lại sẽ tự căn tỉ lệ thì sẽ tránh đc việc hình ảnh bị méo mó
+chiều = số hoặc số%
+
+@Truy cập đường dẫn
+tương đối :
+    ./ chỉ nhìn thấy đc thư muc ngang nó hoặc sau
+    ../ lùi về 1 cấp(có thể ../../ để lùi lại 2 cấp )
+tuyệt đôi:
+    đường dẫn tuyệt đối dùng dấu /
+Chú ý:Khi thay đổi vị trí của project thì đường dẫn tuyệt đối vẫn truy cập đc còn tương đối thì không
+
+html entities list : kí tự đặc biệt(có thể dùng khi định dã mã nguồn)
+<pre :giữ nguyên định dạng trong văn bản 
+codebeauty: dùng để định dang mã nguồn trong web
+thư viện đẻ hai lai code: https://prismjs.com/
+
+Sử dụng thẻ table:
+tr: đại diện cho 1 hàng 
+td : đại diện cho 1 ô dữ liệu 
+th : Định nghĩa 1 ô tiêu đề trong bảng
+tối ưu hóa bố cục bảng:
+    Colspan : chỉ định chiếm bao nhiêu cột
+    Rowspan : chỉ định chiếm bao nhiêu hàng
+    
+----------------------------------------------------------------------------------------------------------------------------------
+css
+inline:  <h1 style="color: aqua;">dit me m </h1> chỉ sử lí đc 1 dong
+internal: dùng trong <style : đặt trong thẻ head
+vd:
+<style>
+      h1,h2{
+        color: rgb(16, 155, 155);
+        font-style: italic;
+      }
+    </style>
+external: tao rieng 11 file 
+  <link rel="stylesheet" href="style.css"> : carl kick voo style để tạo file mới
+Inline ->internal and external (2 cái sau thăng viết sau sẽ mạnh hơn)
+
+font-style : kieu chữ 
+font-family: font chữ
+text-transform : chuyển hoa thường 
+text-align: căn giữa 
+font-size: cỡ chữ
+opacity : độ trong suốt của phần tử : vẫn copy đc 
+background-image : url(link ảnh ): ảnh nền web -dung trong body hoặc selector 
+display = none : ấn khỏi phẩn tử trong gia diện và xóa khỏi vị trí
+visibility : hidden :  ẩn (ko tương tác đc )
+visibility : hidden : hiện 
+input:checked ~{} : câu lệnh CSS này sẽ áp dụng các kiểu (style) cho tất cả các thẻ <img> nằm trong cùng một cấp với thẻ <input> đã được chọn (checked)
+img {}: chon thẻ img
+
+hiển thị Favicon:
+link tao :https://www.favicon-generator.org/
+copy đoạn mã rồi sửa đường link ở đoạn href và chỗ content
+ctrl+h để sửa đc nhiều dòng 1 lúc 
+
+tăng cường tính tương thích đá trình duyệt Prefix
+  link tự thêm khi gõ 1 số đoan code :https://autoprefixer.github.io/
+  Caniuse.com : trang web hỗ trợ kiểm tra css có thần thêm prefix;
+
+CSS Selector cơ bản(đánh dấu các phần tử cơ bản)
+  id = "...": khi muốn đặt 1 cái id nào đó để tí nữa sửa css #id thôi và các thẻ phải khác id
+  web check lỗi hợp lệ:https://validator.w3.org/
+  class = "...": do ko thể sử dụng lại tên id trong th muốn khia báo lặp dùng class
+  để gọi class dung .ten-class còn id thì dùng #
+  chú ý : cứ class có nhiều cái trên 1 thẻ cứ cách 1 cái 
+
+Combinator selectors

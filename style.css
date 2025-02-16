@@ -1,0 +1,12 @@
+body {
+    margin: 0; /* Đảm bảo không có khoảng cách thừa */
+    height: 100vh; /* Đặt chiều cao của body bằng chiều cao của viewport */
+    background-image: url(./img/Hình-ảnh-3d-truyền-động-lực-bứt-phá.jpg);
+    background-size: cover; /* Làm cho hình ảnh bao phủ toàn bộ màn hình */
+    background-position: center; /* Đặt hình ảnh ở giữa */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+  }
+  
+h1,a{
+    color:aqua;
+}

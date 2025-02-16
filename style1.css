@@ -1,0 +1,56 @@
+/* Thiết lập cho body */
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(./img/background-dep-don-gian.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Hiệu ứng nhảy lên xuống cho h1 */
+h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    animation: jump 1s infinite; /* Thêm animation */
+}
+
+@keyframes jump {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Hiệu ứng trượt vào từ bên trái cho ol */
+ol {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    animation: slide-in 2s ease-out;
+}
+
+@keyframes slide-in {
+    0% { transform: translateX(-100%); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+}
+
+/* Thêm hiệu ứng khi hover vào hình ảnh */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.5s ease; /* Thêm hiệu ứng khi di chuột */
+}
+
+img:hover {
+    transform: scale(1.1) rotate(10deg); /* Tăng kích thước và xoay khi hover */
+}
